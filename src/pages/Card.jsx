@@ -24,7 +24,7 @@ function Card({key,value} ) {
     
 
   return (
-    <div className=' flex items-center flex-col  justify-center rounded-md border-2 gap-3 p-4 mt-10 ml-5 
+    <div className=' flex items-center flex-col justify-center rounded-md border-2 gap-3 p-4 mt-10 ml-5 
      hover:scale-110 hover:transition-transform ease-in hover:shadow-2xl  sm:grid-cols-1' >
        
             <div><h1 className='text-[18px] flex items-center max-h-[80px] h-full font-medium '>{post.title.split(" ").slice(0,2).join(" ")+`...`}</h1></div>

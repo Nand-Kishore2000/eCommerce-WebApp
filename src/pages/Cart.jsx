@@ -21,16 +21,16 @@ function Cart(props) {
         {
             cart.length > 0 ? 
             (
-             <div className=' flex justify-center   ' >
+             <div className=' flex lg:justify-center lg:flex-row flex-col md:flex-row    ' >
                <div  >
                   {
                       cart.map((item,index)=>(
-                     <Cartitem key={item.id} item={item} itemindex={index}/>
+                     <Cartitem key={index} item={item} itemindex={item.id}/>
                      ))
                   }
              </div>
              
-             <div className=' flex basis-1/2 flex-col text-green-800 pb-[50px] top-0 pt-[50px] h-[650px] pl-[30px] justify-between  border-l-2 '>
+             <div className=' flex basis-1/2 flex-col text-green-800 pb-[50px] top-0 pt-[50px] h-[650px] lg:pl-[30px] justify-between  border-l-2 '>
                      <div className='flex flex-col text-green-700 text-left '>
                         <div className='text-[1.2rem]'>YOUR CART</div>
                         <p className='text-[3rem] font-bold'>SUMMARY</p>
@@ -57,7 +57,7 @@ function Cart(props) {
                  <div className=' flex justify-center items-center flex-col w-full h-[100vh] '>
                     <div><p className='text-[24px] font-medium '>No items available </p></div>
                   
-                   <div className='text-white bg-green-500 w-[130px] h-[32px] p-1 rounded-sm font-medium'>
+                   <div className='text-white bg-green-500 lg:w-[130px] lg:h-[32px] w-[80px] h-[25px]  p-1 rounded-sm font-medium'>
                       <Link to={'/'}>
                          <button>Shop Now</button>
                     </Link>
